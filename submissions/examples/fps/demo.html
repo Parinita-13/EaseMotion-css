@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scroll Animation FPS Benchmark</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <h1>Scroll Animation Performance Benchmark</h1>
+    <p>Scroll down to trigger composited hardware-accelerated animations.</p>
+  </header>
+
+  <main class="container">
+    <!-- Generated cards for scroll testing -->
+    <script>
+      for (let i = 1; i <= 60; i++) {
+        document.write(`
+          <section class="card">
+            <h2>Performance Item ${i}</h2>
+            <p>Testing scroll performance, frame stability, and rendering budget limits using Puppeteer.</p>
+          </section>
+        `);
+      }
+    </script>
+  </main>
+</body>
+</html>
